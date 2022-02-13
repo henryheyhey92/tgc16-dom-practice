@@ -9,26 +9,27 @@
   <body>
     <div class="form">
       <div>
-        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="First name" id="firstName"/>
       </div>
       <div>
-        <input type="text" placeholder="Last name" />
+        <input type="text" placeholder="Last name" id="lastName"/>
       </div>
       <div>
         <label>Ticket Class:</label>
-        <input type="radio" />First Class <input type="radio" />Business Class
-        <input type="radio" />Economy
+        <input type="radio" class="ticket" value="First class"/>First Class 
+        <input type="radio" class="ticket" value="Business class"/>Business Class
+        <input type="radio" class="ticket" value="Economy class"/>Economy
       </div>
       <div>
         <label>Options:</label>
-        <input type="checkbox" />In-flight Meal
-        <input type="checkbox" />Free-flow drinks
-        <input type="checkbox" />In-flight entertainment
-        <input type="checkbox" />Extra luggage space
+        <input type="checkbox" class="meal" value="Meal"/>In-flight Meal
+        <input type="checkbox" class="meal" value="drink"/>Free-flow drinks
+        <input type="checkbox" class="meal" value="entertainment"/>In-flight entertainment
+        <input type="checkbox" class="meal" value="luggage space"/>Extra luggage space
       </div>
-      <button>Place booking</button>
+      <button id="booking">Place booking</button>
     </div>
     <div id="summary"></div>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
